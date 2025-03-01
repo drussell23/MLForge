@@ -1,4 +1,8 @@
 {
     "C_Cpp.default.compilerPath": "/usr/bin/g++",
-    "C_Cpp.errorSquiggles": "enabled"
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "__locale": "cpp"
+    }
 }
