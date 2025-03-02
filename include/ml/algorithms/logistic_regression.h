@@ -132,6 +132,7 @@ private:
     std::vector<double> coefficients_; ///< Model coefficients: [intercept, w1, w2, ..., wn]
     double alpha_;                     ///< Regularization parameter.
     std::string regularization_type_;  ///< "none", "ridge", or "lasso"
+    double learning_rate_;             ///< Learning rate for gradient descent. 
 };
 
 } // namespace algorithms

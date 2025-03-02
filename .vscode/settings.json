@@ -3,6 +3,8 @@
     "C_Cpp.errorSquiggles": "enabled",
     "files.associations": {
         "*.embeddedhtml": "html",
-        "__locale": "cpp"
+        "__locale": "cpp",
+        "vector": "cpp",
+        "iostream": "cpp"
     }
 }
