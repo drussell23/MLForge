@@ -54,20 +54,26 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/derekjrussell/Documents/repos/ML-Framework-Project
+CMAKE_SOURCE_DIR = /Users/derekjrussell/Documents/repos/MLForge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/derekjrussell/Documents/repos/ML-Framework-Project/build
+CMAKE_BINARY_DIR = /Users/derekjrussell/Documents/repos/MLForge/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/MLForgeLib.dir/all
+all: CMakeFiles/test_algorithms.dir/all
+all: CMakeFiles/benchmarks.dir/all
+all: CMakeFiles/profiler.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen:
+codegen: CMakeFiles/MLForgeLib.dir/codegen
+codegen: CMakeFiles/test_algorithms.dir/codegen
+codegen: CMakeFiles/benchmarks.dir/codegen
+codegen: CMakeFiles/profiler.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,8 +81,139 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: CMakeFiles/MLForgeLib.dir/clean
+clean: CMakeFiles/test_algorithms.dir/clean
+clean: CMakeFiles/benchmarks.dir/clean
+clean: CMakeFiles/profiler.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MLForgeLib.dir
+
+# All Build rule for target.
+CMakeFiles/MLForgeLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target MLForgeLib"
+.PHONY : CMakeFiles/MLForgeLib.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MLForgeLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MLForgeLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles 0
+.PHONY : CMakeFiles/MLForgeLib.dir/rule
+
+# Convenience name for target.
+MLForgeLib: CMakeFiles/MLForgeLib.dir/rule
+.PHONY : MLForgeLib
+
+# codegen rule for target.
+CMakeFiles/MLForgeLib.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Finished codegen for target MLForgeLib"
+.PHONY : CMakeFiles/MLForgeLib.dir/codegen
+
+# clean rule for target.
+CMakeFiles/MLForgeLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/clean
+.PHONY : CMakeFiles/MLForgeLib.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_algorithms.dir
+
+# All Build rule for target.
+CMakeFiles/test_algorithms.dir/all: CMakeFiles/MLForgeLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_algorithms.dir/build.make CMakeFiles/test_algorithms.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_algorithms.dir/build.make CMakeFiles/test_algorithms.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=17,18 "Built target test_algorithms"
+.PHONY : CMakeFiles/test_algorithms.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_algorithms.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_algorithms.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_algorithms.dir/rule
+
+# Convenience name for target.
+test_algorithms: CMakeFiles/test_algorithms.dir/rule
+.PHONY : test_algorithms
+
+# codegen rule for target.
+CMakeFiles/test_algorithms.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_algorithms.dir/build.make CMakeFiles/test_algorithms.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=17,18 "Finished codegen for target test_algorithms"
+.PHONY : CMakeFiles/test_algorithms.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_algorithms.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_algorithms.dir/build.make CMakeFiles/test_algorithms.dir/clean
+.PHONY : CMakeFiles/test_algorithms.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/benchmarks.dir
+
+# All Build rule for target.
+CMakeFiles/benchmarks.dir/all: CMakeFiles/MLForgeLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarks.dir/build.make CMakeFiles/benchmarks.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarks.dir/build.make CMakeFiles/benchmarks.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=13,14 "Built target benchmarks"
+.PHONY : CMakeFiles/benchmarks.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/benchmarks.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/benchmarks.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles 0
+.PHONY : CMakeFiles/benchmarks.dir/rule
+
+# Convenience name for target.
+benchmarks: CMakeFiles/benchmarks.dir/rule
+.PHONY : benchmarks
+
+# codegen rule for target.
+CMakeFiles/benchmarks.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarks.dir/build.make CMakeFiles/benchmarks.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=13,14 "Finished codegen for target benchmarks"
+.PHONY : CMakeFiles/benchmarks.dir/codegen
+
+# clean rule for target.
+CMakeFiles/benchmarks.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarks.dir/build.make CMakeFiles/benchmarks.dir/clean
+.PHONY : CMakeFiles/benchmarks.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/profiler.dir
+
+# All Build rule for target.
+CMakeFiles/profiler.dir/all: CMakeFiles/MLForgeLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/profiler.dir/build.make CMakeFiles/profiler.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/profiler.dir/build.make CMakeFiles/profiler.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=15,16 "Built target profiler"
+.PHONY : CMakeFiles/profiler.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/profiler.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/profiler.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles 0
+.PHONY : CMakeFiles/profiler.dir/rule
+
+# Convenience name for target.
+profiler: CMakeFiles/profiler.dir/rule
+.PHONY : profiler
+
+# codegen rule for target.
+CMakeFiles/profiler.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/profiler.dir/build.make CMakeFiles/profiler.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=15,16 "Finished codegen for target profiler"
+.PHONY : CMakeFiles/profiler.dir/codegen
+
+# clean rule for target.
+CMakeFiles/profiler.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/profiler.dir/build.make CMakeFiles/profiler.dir/clean
+.PHONY : CMakeFiles/profiler.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

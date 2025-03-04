@@ -1,0 +1,86 @@
+[
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DDEBUG_ENABLED -DMLForgeLib_EXPORTS -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -Wall -Wextra -pedantic -Werror -o CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/ai/nlp_transformer.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/src/ai/nlp_transformer.cpp",
+  "output": "CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.o"
+},
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DDEBUG_ENABLED -DMLForgeLib_EXPORTS -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -Wall -Wextra -pedantic -Werror -o CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/decision.tree.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/src/algorithms/decision.tree.cpp",
+  "output": "CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.o"
+},
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DDEBUG_ENABLED -DMLForgeLib_EXPORTS -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -Wall -Wextra -pedantic -Werror -o CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/linear_regression.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/src/algorithms/linear_regression.cpp",
+  "output": "CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.o"
+},
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DDEBUG_ENABLED -DMLForgeLib_EXPORTS -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -Wall -Wextra -pedantic -Werror -o CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/logistic_regression.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/src/algorithms/logistic_regression.cpp",
+  "output": "CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.o"
+},
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DDEBUG_ENABLED -DMLForgeLib_EXPORTS -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -Wall -Wextra -pedantic -Werror -o CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/neural_net.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/src/algorithms/neural_net.cpp",
+  "output": "CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.o"
+},
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DDEBUG_ENABLED -DMLForgeLib_EXPORTS -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -Wall -Wextra -pedantic -Werror -o CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/core/data_structures/trie.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/src/core/data_structures/trie.cpp",
+  "output": "CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.o"
+},
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DDEBUG_ENABLED -DMLForgeLib_EXPORTS -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -Wall -Wextra -pedantic -Werror -o CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/core/matrix.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/src/core/matrix.cpp",
+  "output": "CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.o"
+},
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DDEBUG_ENABLED -DMLForgeLib_EXPORTS -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -Wall -Wextra -pedantic -Werror -o CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/core/utils.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/src/core/utils.cpp",
+  "output": "CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.o"
+},
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DDEBUG_ENABLED -DMLForgeLib_EXPORTS -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -Wall -Wextra -pedantic -Werror -o CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/deployment/api.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/src/deployment/api.cpp",
+  "output": "CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.o"
+},
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DDEBUG_ENABLED -DMLForgeLib_EXPORTS -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -Wall -Wextra -pedantic -Werror -o CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/deployment/model_server.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/src/deployment/model_server.cpp",
+  "output": "CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.o"
+},
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DDEBUG_ENABLED -DMLForgeLib_EXPORTS -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -Wall -Wextra -pedantic -Werror -o CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/serialization/serializer.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/src/serialization/serializer.cpp",
+  "output": "CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.o"
+},
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIE -Wall -Wextra -pedantic -Werror -o CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/tests/test_algorithms.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/tests/test_algorithms.cpp",
+  "output": "CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.o"
+},
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIE -Wall -Wextra -pedantic -Werror -o CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/benchmarks/benchmarks.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/benchmarks/benchmarks.cpp",
+  "output": "CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.o"
+},
+{
+  "directory": "/Users/derekjrussell/Documents/repos/MLForge/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/derekjrussell/Documents/repos/MLForge/third_party/cpp-httplib -I/Users/derekjrussell/Documents/repos/MLForge/include -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIE -Wall -Wextra -pedantic -Werror -o CMakeFiles/profiler.dir/profiling/profiler.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/profiling/profiler.cpp",
+  "file": "/Users/derekjrussell/Documents/repos/MLForge/profiling/profiler.cpp",
+  "output": "CMakeFiles/profiler.dir/profiling/profiler.cpp.o"
+}
+]

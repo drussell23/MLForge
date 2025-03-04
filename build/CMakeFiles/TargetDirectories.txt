@@ -1,2 +1,11 @@
-/Users/derekjrussell/Documents/repos/ML-Framework-Project/build/CMakeFiles/edit_cache.dir
-/Users/derekjrussell/Documents/repos/ML-Framework-Project/build/CMakeFiles/rebuild_cache.dir
+/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/MLForgeLib.dir
+/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/test_algorithms.dir
+/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/benchmarks.dir
+/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/profiler.dir
+/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/test.dir
+/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/edit_cache.dir
+/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/rebuild_cache.dir
+/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/list_install_components.dir
+/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/install.dir
+/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/install/local.dir
+/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/install/strip.dir

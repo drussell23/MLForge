@@ -57,13 +57,23 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/derekjrussell/Documents/repos/ML-Framework-Project
+CMAKE_SOURCE_DIR = /Users/derekjrussell/Documents/repos/MLForge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/derekjrussell/Documents/repos/ML-Framework-Project/build
+CMAKE_BINARY_DIR = /Users/derekjrussell/Documents/repos/MLForge/build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/opt/homebrew/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -85,11 +95,56 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/ML-Framework-Project/build/CMakeFiles /Users/derekjrussell/Documents/repos/ML-Framework-Project/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles /Users/derekjrussell/Documents/repos/MLForge/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/ML-Framework-Project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,6 +171,394 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named MLForgeLib
+
+# Build rule for target.
+MLForgeLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MLForgeLib
+.PHONY : MLForgeLib
+
+# fast build rule for target.
+MLForgeLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/build
+.PHONY : MLForgeLib/fast
+
+#=============================================================================
+# Target rules for targets named test_algorithms
+
+# Build rule for target.
+test_algorithms: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_algorithms
+.PHONY : test_algorithms
+
+# fast build rule for target.
+test_algorithms/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_algorithms.dir/build.make CMakeFiles/test_algorithms.dir/build
+.PHONY : test_algorithms/fast
+
+#=============================================================================
+# Target rules for targets named benchmarks
+
+# Build rule for target.
+benchmarks: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmarks
+.PHONY : benchmarks
+
+# fast build rule for target.
+benchmarks/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarks.dir/build.make CMakeFiles/benchmarks.dir/build
+.PHONY : benchmarks/fast
+
+#=============================================================================
+# Target rules for targets named profiler
+
+# Build rule for target.
+profiler: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 profiler
+.PHONY : profiler
+
+# fast build rule for target.
+profiler/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/profiler.dir/build.make CMakeFiles/profiler.dir/build
+.PHONY : profiler/fast
+
+benchmarks/benchmarks.o: benchmarks/benchmarks.cpp.o
+.PHONY : benchmarks/benchmarks.o
+
+# target to build an object file
+benchmarks/benchmarks.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarks.dir/build.make CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.o
+.PHONY : benchmarks/benchmarks.cpp.o
+
+benchmarks/benchmarks.i: benchmarks/benchmarks.cpp.i
+.PHONY : benchmarks/benchmarks.i
+
+# target to preprocess a source file
+benchmarks/benchmarks.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarks.dir/build.make CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.i
+.PHONY : benchmarks/benchmarks.cpp.i
+
+benchmarks/benchmarks.s: benchmarks/benchmarks.cpp.s
+.PHONY : benchmarks/benchmarks.s
+
+# target to generate assembly for a file
+benchmarks/benchmarks.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarks.dir/build.make CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.s
+.PHONY : benchmarks/benchmarks.cpp.s
+
+profiling/profiler.o: profiling/profiler.cpp.o
+.PHONY : profiling/profiler.o
+
+# target to build an object file
+profiling/profiler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/profiler.dir/build.make CMakeFiles/profiler.dir/profiling/profiler.cpp.o
+.PHONY : profiling/profiler.cpp.o
+
+profiling/profiler.i: profiling/profiler.cpp.i
+.PHONY : profiling/profiler.i
+
+# target to preprocess a source file
+profiling/profiler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/profiler.dir/build.make CMakeFiles/profiler.dir/profiling/profiler.cpp.i
+.PHONY : profiling/profiler.cpp.i
+
+profiling/profiler.s: profiling/profiler.cpp.s
+.PHONY : profiling/profiler.s
+
+# target to generate assembly for a file
+profiling/profiler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/profiler.dir/build.make CMakeFiles/profiler.dir/profiling/profiler.cpp.s
+.PHONY : profiling/profiler.cpp.s
+
+src/ai/nlp_transformer.o: src/ai/nlp_transformer.cpp.o
+.PHONY : src/ai/nlp_transformer.o
+
+# target to build an object file
+src/ai/nlp_transformer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.o
+.PHONY : src/ai/nlp_transformer.cpp.o
+
+src/ai/nlp_transformer.i: src/ai/nlp_transformer.cpp.i
+.PHONY : src/ai/nlp_transformer.i
+
+# target to preprocess a source file
+src/ai/nlp_transformer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.i
+.PHONY : src/ai/nlp_transformer.cpp.i
+
+src/ai/nlp_transformer.s: src/ai/nlp_transformer.cpp.s
+.PHONY : src/ai/nlp_transformer.s
+
+# target to generate assembly for a file
+src/ai/nlp_transformer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.s
+.PHONY : src/ai/nlp_transformer.cpp.s
+
+src/algorithms/decision.tree.o: src/algorithms/decision.tree.cpp.o
+.PHONY : src/algorithms/decision.tree.o
+
+# target to build an object file
+src/algorithms/decision.tree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.o
+.PHONY : src/algorithms/decision.tree.cpp.o
+
+src/algorithms/decision.tree.i: src/algorithms/decision.tree.cpp.i
+.PHONY : src/algorithms/decision.tree.i
+
+# target to preprocess a source file
+src/algorithms/decision.tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.i
+.PHONY : src/algorithms/decision.tree.cpp.i
+
+src/algorithms/decision.tree.s: src/algorithms/decision.tree.cpp.s
+.PHONY : src/algorithms/decision.tree.s
+
+# target to generate assembly for a file
+src/algorithms/decision.tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.s
+.PHONY : src/algorithms/decision.tree.cpp.s
+
+src/algorithms/linear_regression.o: src/algorithms/linear_regression.cpp.o
+.PHONY : src/algorithms/linear_regression.o
+
+# target to build an object file
+src/algorithms/linear_regression.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.o
+.PHONY : src/algorithms/linear_regression.cpp.o
+
+src/algorithms/linear_regression.i: src/algorithms/linear_regression.cpp.i
+.PHONY : src/algorithms/linear_regression.i
+
+# target to preprocess a source file
+src/algorithms/linear_regression.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.i
+.PHONY : src/algorithms/linear_regression.cpp.i
+
+src/algorithms/linear_regression.s: src/algorithms/linear_regression.cpp.s
+.PHONY : src/algorithms/linear_regression.s
+
+# target to generate assembly for a file
+src/algorithms/linear_regression.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.s
+.PHONY : src/algorithms/linear_regression.cpp.s
+
+src/algorithms/logistic_regression.o: src/algorithms/logistic_regression.cpp.o
+.PHONY : src/algorithms/logistic_regression.o
+
+# target to build an object file
+src/algorithms/logistic_regression.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.o
+.PHONY : src/algorithms/logistic_regression.cpp.o
+
+src/algorithms/logistic_regression.i: src/algorithms/logistic_regression.cpp.i
+.PHONY : src/algorithms/logistic_regression.i
+
+# target to preprocess a source file
+src/algorithms/logistic_regression.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.i
+.PHONY : src/algorithms/logistic_regression.cpp.i
+
+src/algorithms/logistic_regression.s: src/algorithms/logistic_regression.cpp.s
+.PHONY : src/algorithms/logistic_regression.s
+
+# target to generate assembly for a file
+src/algorithms/logistic_regression.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.s
+.PHONY : src/algorithms/logistic_regression.cpp.s
+
+src/algorithms/neural_net.o: src/algorithms/neural_net.cpp.o
+.PHONY : src/algorithms/neural_net.o
+
+# target to build an object file
+src/algorithms/neural_net.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.o
+.PHONY : src/algorithms/neural_net.cpp.o
+
+src/algorithms/neural_net.i: src/algorithms/neural_net.cpp.i
+.PHONY : src/algorithms/neural_net.i
+
+# target to preprocess a source file
+src/algorithms/neural_net.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.i
+.PHONY : src/algorithms/neural_net.cpp.i
+
+src/algorithms/neural_net.s: src/algorithms/neural_net.cpp.s
+.PHONY : src/algorithms/neural_net.s
+
+# target to generate assembly for a file
+src/algorithms/neural_net.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.s
+.PHONY : src/algorithms/neural_net.cpp.s
+
+src/core/data_structures/trie.o: src/core/data_structures/trie.cpp.o
+.PHONY : src/core/data_structures/trie.o
+
+# target to build an object file
+src/core/data_structures/trie.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.o
+.PHONY : src/core/data_structures/trie.cpp.o
+
+src/core/data_structures/trie.i: src/core/data_structures/trie.cpp.i
+.PHONY : src/core/data_structures/trie.i
+
+# target to preprocess a source file
+src/core/data_structures/trie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.i
+.PHONY : src/core/data_structures/trie.cpp.i
+
+src/core/data_structures/trie.s: src/core/data_structures/trie.cpp.s
+.PHONY : src/core/data_structures/trie.s
+
+# target to generate assembly for a file
+src/core/data_structures/trie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.s
+.PHONY : src/core/data_structures/trie.cpp.s
+
+src/core/matrix.o: src/core/matrix.cpp.o
+.PHONY : src/core/matrix.o
+
+# target to build an object file
+src/core/matrix.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.o
+.PHONY : src/core/matrix.cpp.o
+
+src/core/matrix.i: src/core/matrix.cpp.i
+.PHONY : src/core/matrix.i
+
+# target to preprocess a source file
+src/core/matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.i
+.PHONY : src/core/matrix.cpp.i
+
+src/core/matrix.s: src/core/matrix.cpp.s
+.PHONY : src/core/matrix.s
+
+# target to generate assembly for a file
+src/core/matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.s
+.PHONY : src/core/matrix.cpp.s
+
+src/core/utils.o: src/core/utils.cpp.o
+.PHONY : src/core/utils.o
+
+# target to build an object file
+src/core/utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.o
+.PHONY : src/core/utils.cpp.o
+
+src/core/utils.i: src/core/utils.cpp.i
+.PHONY : src/core/utils.i
+
+# target to preprocess a source file
+src/core/utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.i
+.PHONY : src/core/utils.cpp.i
+
+src/core/utils.s: src/core/utils.cpp.s
+.PHONY : src/core/utils.s
+
+# target to generate assembly for a file
+src/core/utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.s
+.PHONY : src/core/utils.cpp.s
+
+src/deployment/api.o: src/deployment/api.cpp.o
+.PHONY : src/deployment/api.o
+
+# target to build an object file
+src/deployment/api.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.o
+.PHONY : src/deployment/api.cpp.o
+
+src/deployment/api.i: src/deployment/api.cpp.i
+.PHONY : src/deployment/api.i
+
+# target to preprocess a source file
+src/deployment/api.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.i
+.PHONY : src/deployment/api.cpp.i
+
+src/deployment/api.s: src/deployment/api.cpp.s
+.PHONY : src/deployment/api.s
+
+# target to generate assembly for a file
+src/deployment/api.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.s
+.PHONY : src/deployment/api.cpp.s
+
+src/deployment/model_server.o: src/deployment/model_server.cpp.o
+.PHONY : src/deployment/model_server.o
+
+# target to build an object file
+src/deployment/model_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.o
+.PHONY : src/deployment/model_server.cpp.o
+
+src/deployment/model_server.i: src/deployment/model_server.cpp.i
+.PHONY : src/deployment/model_server.i
+
+# target to preprocess a source file
+src/deployment/model_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.i
+.PHONY : src/deployment/model_server.cpp.i
+
+src/deployment/model_server.s: src/deployment/model_server.cpp.s
+.PHONY : src/deployment/model_server.s
+
+# target to generate assembly for a file
+src/deployment/model_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.s
+.PHONY : src/deployment/model_server.cpp.s
+
+src/serialization/serializer.o: src/serialization/serializer.cpp.o
+.PHONY : src/serialization/serializer.o
+
+# target to build an object file
+src/serialization/serializer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.o
+.PHONY : src/serialization/serializer.cpp.o
+
+src/serialization/serializer.i: src/serialization/serializer.cpp.i
+.PHONY : src/serialization/serializer.i
+
+# target to preprocess a source file
+src/serialization/serializer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.i
+.PHONY : src/serialization/serializer.cpp.i
+
+src/serialization/serializer.s: src/serialization/serializer.cpp.s
+.PHONY : src/serialization/serializer.s
+
+# target to generate assembly for a file
+src/serialization/serializer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLForgeLib.dir/build.make CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.s
+.PHONY : src/serialization/serializer.cpp.s
+
+tests/test_algorithms.o: tests/test_algorithms.cpp.o
+.PHONY : tests/test_algorithms.o
+
+# target to build an object file
+tests/test_algorithms.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_algorithms.dir/build.make CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.o
+.PHONY : tests/test_algorithms.cpp.o
+
+tests/test_algorithms.i: tests/test_algorithms.cpp.i
+.PHONY : tests/test_algorithms.i
+
+# target to preprocess a source file
+tests/test_algorithms.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_algorithms.dir/build.make CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.i
+.PHONY : tests/test_algorithms.cpp.i
+
+tests/test_algorithms.s: tests/test_algorithms.cpp.s
+.PHONY : tests/test_algorithms.s
+
+# target to generate assembly for a file
+tests/test_algorithms.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_algorithms.dir/build.make CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.s
+.PHONY : tests/test_algorithms.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -123,7 +566,58 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... test"
+	@echo "... MLForgeLib"
+	@echo "... benchmarks"
+	@echo "... profiler"
+	@echo "... test_algorithms"
+	@echo "... benchmarks/benchmarks.o"
+	@echo "... benchmarks/benchmarks.i"
+	@echo "... benchmarks/benchmarks.s"
+	@echo "... profiling/profiler.o"
+	@echo "... profiling/profiler.i"
+	@echo "... profiling/profiler.s"
+	@echo "... src/ai/nlp_transformer.o"
+	@echo "... src/ai/nlp_transformer.i"
+	@echo "... src/ai/nlp_transformer.s"
+	@echo "... src/algorithms/decision.tree.o"
+	@echo "... src/algorithms/decision.tree.i"
+	@echo "... src/algorithms/decision.tree.s"
+	@echo "... src/algorithms/linear_regression.o"
+	@echo "... src/algorithms/linear_regression.i"
+	@echo "... src/algorithms/linear_regression.s"
+	@echo "... src/algorithms/logistic_regression.o"
+	@echo "... src/algorithms/logistic_regression.i"
+	@echo "... src/algorithms/logistic_regression.s"
+	@echo "... src/algorithms/neural_net.o"
+	@echo "... src/algorithms/neural_net.i"
+	@echo "... src/algorithms/neural_net.s"
+	@echo "... src/core/data_structures/trie.o"
+	@echo "... src/core/data_structures/trie.i"
+	@echo "... src/core/data_structures/trie.s"
+	@echo "... src/core/matrix.o"
+	@echo "... src/core/matrix.i"
+	@echo "... src/core/matrix.s"
+	@echo "... src/core/utils.o"
+	@echo "... src/core/utils.i"
+	@echo "... src/core/utils.s"
+	@echo "... src/deployment/api.o"
+	@echo "... src/deployment/api.i"
+	@echo "... src/deployment/api.s"
+	@echo "... src/deployment/model_server.o"
+	@echo "... src/deployment/model_server.i"
+	@echo "... src/deployment/model_server.s"
+	@echo "... src/serialization/serializer.o"
+	@echo "... src/serialization/serializer.i"
+	@echo "... src/serialization/serializer.s"
+	@echo "... tests/test_algorithms.o"
+	@echo "... tests/test_algorithms.i"
+	@echo "... tests/test_algorithms.s"
 .PHONY : help
 
 

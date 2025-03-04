@@ -6,6 +6,7 @@
         "__locale": "cpp",
         "vector": "cpp",
         "iostream": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "unordered_map": "cpp"
     }
 }
