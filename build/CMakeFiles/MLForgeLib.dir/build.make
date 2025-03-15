@@ -76,155 +76,155 @@ CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.o: CMakeFiles/MLForgeLib.di
 CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/src/ai/nlp_transformer.cpp
 CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.o: CMakeFiles/MLForgeLib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/ai/nlp_transformer.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/ai/nlp_transformer.cpp
 
 CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/ai/nlp_transformer.cpp > CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/ai/nlp_transformer.cpp > CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.i
 
 CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/ai/nlp_transformer.cpp -o CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/ai/nlp_transformer.cpp -o CMakeFiles/MLForgeLib.dir/src/ai/nlp_transformer.cpp.s
 
 CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.o: CMakeFiles/MLForgeLib.dir/flags.make
 CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/decision.tree.cpp
 CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.o: CMakeFiles/MLForgeLib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/decision.tree.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/decision.tree.cpp
 
 CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/decision.tree.cpp > CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/decision.tree.cpp > CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.i
 
 CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/decision.tree.cpp -o CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/decision.tree.cpp -o CMakeFiles/MLForgeLib.dir/src/algorithms/decision.tree.cpp.s
 
 CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.o: CMakeFiles/MLForgeLib.dir/flags.make
 CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/linear_regression.cpp
 CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.o: CMakeFiles/MLForgeLib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/linear_regression.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/linear_regression.cpp
 
 CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/linear_regression.cpp > CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/linear_regression.cpp > CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.i
 
 CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/linear_regression.cpp -o CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/linear_regression.cpp -o CMakeFiles/MLForgeLib.dir/src/algorithms/linear_regression.cpp.s
 
 CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.o: CMakeFiles/MLForgeLib.dir/flags.make
 CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/logistic_regression.cpp
 CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.o: CMakeFiles/MLForgeLib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/logistic_regression.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/logistic_regression.cpp
 
 CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/logistic_regression.cpp > CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/logistic_regression.cpp > CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.i
 
 CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/logistic_regression.cpp -o CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/logistic_regression.cpp -o CMakeFiles/MLForgeLib.dir/src/algorithms/logistic_regression.cpp.s
 
 CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.o: CMakeFiles/MLForgeLib.dir/flags.make
 CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/neural_net.cpp
 CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.o: CMakeFiles/MLForgeLib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/neural_net.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/neural_net.cpp
 
 CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/neural_net.cpp > CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/neural_net.cpp > CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.i
 
 CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/neural_net.cpp -o CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/algorithms/neural_net.cpp -o CMakeFiles/MLForgeLib.dir/src/algorithms/neural_net.cpp.s
 
 CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.o: CMakeFiles/MLForgeLib.dir/flags.make
 CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/src/core/data_structures/trie.cpp
 CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.o: CMakeFiles/MLForgeLib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/core/data_structures/trie.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/core/data_structures/trie.cpp
 
 CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/core/data_structures/trie.cpp > CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/core/data_structures/trie.cpp > CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.i
 
 CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/core/data_structures/trie.cpp -o CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/core/data_structures/trie.cpp -o CMakeFiles/MLForgeLib.dir/src/core/data_structures/trie.cpp.s
 
 CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.o: CMakeFiles/MLForgeLib.dir/flags.make
 CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/src/core/matrix.cpp
 CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.o: CMakeFiles/MLForgeLib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/core/matrix.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/core/matrix.cpp
 
 CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/core/matrix.cpp > CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/core/matrix.cpp > CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.i
 
 CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/core/matrix.cpp -o CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/core/matrix.cpp -o CMakeFiles/MLForgeLib.dir/src/core/matrix.cpp.s
 
 CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.o: CMakeFiles/MLForgeLib.dir/flags.make
 CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/src/core/utils.cpp
 CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.o: CMakeFiles/MLForgeLib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/core/utils.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/core/utils.cpp
 
 CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/core/utils.cpp > CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/core/utils.cpp > CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.i
 
 CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/core/utils.cpp -o CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/core/utils.cpp -o CMakeFiles/MLForgeLib.dir/src/core/utils.cpp.s
 
 CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.o: CMakeFiles/MLForgeLib.dir/flags.make
 CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/src/deployment/api.cpp
 CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.o: CMakeFiles/MLForgeLib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/deployment/api.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/deployment/api.cpp
 
 CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/deployment/api.cpp > CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/deployment/api.cpp > CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.i
 
 CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/deployment/api.cpp -o CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/deployment/api.cpp -o CMakeFiles/MLForgeLib.dir/src/deployment/api.cpp.s
 
 CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.o: CMakeFiles/MLForgeLib.dir/flags.make
 CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/src/deployment/model_server.cpp
 CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.o: CMakeFiles/MLForgeLib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/deployment/model_server.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/deployment/model_server.cpp
 
 CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/deployment/model_server.cpp > CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/deployment/model_server.cpp > CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.i
 
 CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/deployment/model_server.cpp -o CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/deployment/model_server.cpp -o CMakeFiles/MLForgeLib.dir/src/deployment/model_server.cpp.s
 
 CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.o: CMakeFiles/MLForgeLib.dir/flags.make
 CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/src/serialization/serializer.cpp
 CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.o: CMakeFiles/MLForgeLib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/serialization/serializer.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.o -MF CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.o.d -o CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/src/serialization/serializer.cpp
 
 CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/serialization/serializer.cpp > CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/src/serialization/serializer.cpp > CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.i
 
 CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/serialization/serializer.cpp -o CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/src/serialization/serializer.cpp -o CMakeFiles/MLForgeLib.dir/src/serialization/serializer.cpp.s
 
 # Object files for target MLForgeLib
 MLForgeLib_OBJECTS = \

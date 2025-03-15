@@ -1,5 +1,7 @@
 /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/MLForgeLib.dir
 /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/test_algorithms.dir
+/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/test_linear_regression.dir
+/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/test_logistic_regression.dir
 /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/benchmarks.dir
 /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/profiler.dir
 /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles/test.dir

@@ -65,6 +65,8 @@ CMAKE_BINARY_DIR = /Users/derekjrussell/Documents/repos/MLForge/build
 # The main recursive "all" target.
 all: CMakeFiles/MLForgeLib.dir/all
 all: CMakeFiles/test_algorithms.dir/all
+all: CMakeFiles/test_linear_regression.dir/all
+all: CMakeFiles/test_logistic_regression.dir/all
 all: CMakeFiles/benchmarks.dir/all
 all: CMakeFiles/profiler.dir/all
 .PHONY : all
@@ -72,6 +74,8 @@ all: CMakeFiles/profiler.dir/all
 # The main recursive "codegen" target.
 codegen: CMakeFiles/MLForgeLib.dir/codegen
 codegen: CMakeFiles/test_algorithms.dir/codegen
+codegen: CMakeFiles/test_linear_regression.dir/codegen
+codegen: CMakeFiles/test_logistic_regression.dir/codegen
 codegen: CMakeFiles/benchmarks.dir/codegen
 codegen: CMakeFiles/profiler.dir/codegen
 .PHONY : codegen
@@ -83,6 +87,8 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/MLForgeLib.dir/clean
 clean: CMakeFiles/test_algorithms.dir/clean
+clean: CMakeFiles/test_linear_regression.dir/clean
+clean: CMakeFiles/test_logistic_regression.dir/clean
 clean: CMakeFiles/benchmarks.dir/clean
 clean: CMakeFiles/profiler.dir/clean
 .PHONY : clean
@@ -150,6 +156,70 @@ CMakeFiles/test_algorithms.dir/codegen:
 CMakeFiles/test_algorithms.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_algorithms.dir/build.make CMakeFiles/test_algorithms.dir/clean
 .PHONY : CMakeFiles/test_algorithms.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_linear_regression.dir
+
+# All Build rule for target.
+CMakeFiles/test_linear_regression.dir/all: CMakeFiles/MLForgeLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_linear_regression.dir/build.make CMakeFiles/test_linear_regression.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_linear_regression.dir/build.make CMakeFiles/test_linear_regression.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=19,20 "Built target test_linear_regression"
+.PHONY : CMakeFiles/test_linear_regression.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_linear_regression.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_linear_regression.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_linear_regression.dir/rule
+
+# Convenience name for target.
+test_linear_regression: CMakeFiles/test_linear_regression.dir/rule
+.PHONY : test_linear_regression
+
+# codegen rule for target.
+CMakeFiles/test_linear_regression.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_linear_regression.dir/build.make CMakeFiles/test_linear_regression.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=19,20 "Finished codegen for target test_linear_regression"
+.PHONY : CMakeFiles/test_linear_regression.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_linear_regression.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_linear_regression.dir/build.make CMakeFiles/test_linear_regression.dir/clean
+.PHONY : CMakeFiles/test_linear_regression.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_logistic_regression.dir
+
+# All Build rule for target.
+CMakeFiles/test_logistic_regression.dir/all: CMakeFiles/MLForgeLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_logistic_regression.dir/build.make CMakeFiles/test_logistic_regression.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_logistic_regression.dir/build.make CMakeFiles/test_logistic_regression.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=21,22 "Built target test_logistic_regression"
+.PHONY : CMakeFiles/test_logistic_regression.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_logistic_regression.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_logistic_regression.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_logistic_regression.dir/rule
+
+# Convenience name for target.
+test_logistic_regression: CMakeFiles/test_logistic_regression.dir/rule
+.PHONY : test_logistic_regression
+
+# codegen rule for target.
+CMakeFiles/test_logistic_regression.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_logistic_regression.dir/build.make CMakeFiles/test_logistic_regression.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=21,22 "Finished codegen for target test_logistic_regression"
+.PHONY : CMakeFiles/test_logistic_regression.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_logistic_regression.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_logistic_regression.dir/build.make CMakeFiles/test_logistic_regression.dir/clean
+.PHONY : CMakeFiles/test_logistic_regression.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/benchmarks.dir

@@ -76,15 +76,15 @@ CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.o: CMakeFiles/benchmarks.dir
 CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/benchmarks/benchmarks.cpp
 CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.o: CMakeFiles/benchmarks.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.o -MF CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.o.d -o CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/benchmarks/benchmarks.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.o -MF CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.o.d -o CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/benchmarks/benchmarks.cpp
 
 CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/benchmarks/benchmarks.cpp > CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/benchmarks/benchmarks.cpp > CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.i
 
 CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/benchmarks/benchmarks.cpp -o CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/benchmarks/benchmarks.cpp -o CMakeFiles/benchmarks.dir/benchmarks/benchmarks.cpp.s
 
 # Object files for target benchmarks
 benchmarks_OBJECTS = \

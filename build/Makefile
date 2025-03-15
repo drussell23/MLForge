@@ -198,6 +198,32 @@ test_algorithms/fast:
 .PHONY : test_algorithms/fast
 
 #=============================================================================
+# Target rules for targets named test_linear_regression
+
+# Build rule for target.
+test_linear_regression: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_linear_regression
+.PHONY : test_linear_regression
+
+# fast build rule for target.
+test_linear_regression/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_linear_regression.dir/build.make CMakeFiles/test_linear_regression.dir/build
+.PHONY : test_linear_regression/fast
+
+#=============================================================================
+# Target rules for targets named test_logistic_regression
+
+# Build rule for target.
+test_logistic_regression: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_logistic_regression
+.PHONY : test_logistic_regression
+
+# fast build rule for target.
+test_logistic_regression/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_logistic_regression.dir/build.make CMakeFiles/test_logistic_regression.dir/build
+.PHONY : test_logistic_regression/fast
+
+#=============================================================================
 # Target rules for targets named benchmarks
 
 # Build rule for target.
@@ -559,6 +585,54 @@ tests/test_algorithms.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_algorithms.dir/build.make CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.s
 .PHONY : tests/test_algorithms.cpp.s
 
+tests/test_linear_regression.o: tests/test_linear_regression.cpp.o
+.PHONY : tests/test_linear_regression.o
+
+# target to build an object file
+tests/test_linear_regression.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_linear_regression.dir/build.make CMakeFiles/test_linear_regression.dir/tests/test_linear_regression.cpp.o
+.PHONY : tests/test_linear_regression.cpp.o
+
+tests/test_linear_regression.i: tests/test_linear_regression.cpp.i
+.PHONY : tests/test_linear_regression.i
+
+# target to preprocess a source file
+tests/test_linear_regression.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_linear_regression.dir/build.make CMakeFiles/test_linear_regression.dir/tests/test_linear_regression.cpp.i
+.PHONY : tests/test_linear_regression.cpp.i
+
+tests/test_linear_regression.s: tests/test_linear_regression.cpp.s
+.PHONY : tests/test_linear_regression.s
+
+# target to generate assembly for a file
+tests/test_linear_regression.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_linear_regression.dir/build.make CMakeFiles/test_linear_regression.dir/tests/test_linear_regression.cpp.s
+.PHONY : tests/test_linear_regression.cpp.s
+
+tests/test_logistic_regression.o: tests/test_logistic_regression.cpp.o
+.PHONY : tests/test_logistic_regression.o
+
+# target to build an object file
+tests/test_logistic_regression.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_logistic_regression.dir/build.make CMakeFiles/test_logistic_regression.dir/tests/test_logistic_regression.cpp.o
+.PHONY : tests/test_logistic_regression.cpp.o
+
+tests/test_logistic_regression.i: tests/test_logistic_regression.cpp.i
+.PHONY : tests/test_logistic_regression.i
+
+# target to preprocess a source file
+tests/test_logistic_regression.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_logistic_regression.dir/build.make CMakeFiles/test_logistic_regression.dir/tests/test_logistic_regression.cpp.i
+.PHONY : tests/test_logistic_regression.cpp.i
+
+tests/test_logistic_regression.s: tests/test_logistic_regression.cpp.s
+.PHONY : tests/test_logistic_regression.s
+
+# target to generate assembly for a file
+tests/test_logistic_regression.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_logistic_regression.dir/build.make CMakeFiles/test_logistic_regression.dir/tests/test_logistic_regression.cpp.s
+.PHONY : tests/test_logistic_regression.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -576,6 +650,8 @@ help:
 	@echo "... benchmarks"
 	@echo "... profiler"
 	@echo "... test_algorithms"
+	@echo "... test_linear_regression"
+	@echo "... test_logistic_regression"
 	@echo "... benchmarks/benchmarks.o"
 	@echo "... benchmarks/benchmarks.i"
 	@echo "... benchmarks/benchmarks.s"
@@ -618,6 +694,12 @@ help:
 	@echo "... tests/test_algorithms.o"
 	@echo "... tests/test_algorithms.i"
 	@echo "... tests/test_algorithms.s"
+	@echo "... tests/test_linear_regression.o"
+	@echo "... tests/test_linear_regression.i"
+	@echo "... tests/test_linear_regression.s"
+	@echo "... tests/test_logistic_regression.o"
+	@echo "... tests/test_logistic_regression.i"
+	@echo "... tests/test_logistic_regression.s"
 .PHONY : help
 
 

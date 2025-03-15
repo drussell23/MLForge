@@ -76,15 +76,15 @@ CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.o: CMakeFiles/test_algo
 CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/tests/test_algorithms.cpp
 CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.o: CMakeFiles/test_algorithms.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.o -MF CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.o.d -o CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/tests/test_algorithms.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.o -MF CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.o.d -o CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/tests/test_algorithms.cpp
 
 CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/tests/test_algorithms.cpp > CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/tests/test_algorithms.cpp > CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.i
 
 CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/tests/test_algorithms.cpp -o CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/tests/test_algorithms.cpp -o CMakeFiles/test_algorithms.dir/tests/test_algorithms.cpp.s
 
 # Object files for target test_algorithms
 test_algorithms_OBJECTS = \

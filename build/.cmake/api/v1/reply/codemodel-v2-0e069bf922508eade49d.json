@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-8fe9a2438129c5ecd5d7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MLForge",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "MLForgeLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MLForgeLib-Debug-60e7d06255541ee5bed1.json",
+					"name" : "MLForgeLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "benchmarks::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-benchmarks-Debug-7dbc711fd61e9c76fc21.json",
+					"name" : "benchmarks",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "profiler::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-profiler-Debug-c1c752078d34b084c5bc.json",
+					"name" : "profiler",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_algorithms::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_algorithms-Debug-a7c7b24e8ce12fc56123.json",
+					"name" : "test_algorithms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_linear_regression::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_linear_regression-Debug-d3587bccbbd55d6f64ad.json",
+					"name" : "test_linear_regression",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_logistic_regression::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_logistic_regression-Debug-f9b7e7404ecf0a20d8cd.json",
+					"name" : "test_logistic_regression",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/derekjrussell/Documents/repos/MLForge/build",
+		"source" : "/Users/derekjrussell/Documents/repos/MLForge"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

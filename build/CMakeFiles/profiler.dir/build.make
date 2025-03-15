@@ -76,15 +76,15 @@ CMakeFiles/profiler.dir/profiling/profiler.cpp.o: CMakeFiles/profiler.dir/flags.
 CMakeFiles/profiler.dir/profiling/profiler.cpp.o: /Users/derekjrussell/Documents/repos/MLForge/profiling/profiler.cpp
 CMakeFiles/profiler.dir/profiling/profiler.cpp.o: CMakeFiles/profiler.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/derekjrussell/Documents/repos/MLForge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/profiler.dir/profiling/profiler.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/profiler.dir/profiling/profiler.cpp.o -MF CMakeFiles/profiler.dir/profiling/profiler.cpp.o.d -o CMakeFiles/profiler.dir/profiling/profiler.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/profiling/profiler.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/profiler.dir/profiling/profiler.cpp.o -MF CMakeFiles/profiler.dir/profiling/profiler.cpp.o.d -o CMakeFiles/profiler.dir/profiling/profiler.cpp.o -c /Users/derekjrussell/Documents/repos/MLForge/profiling/profiler.cpp
 
 CMakeFiles/profiler.dir/profiling/profiler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/profiler.dir/profiling/profiler.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/profiling/profiler.cpp > CMakeFiles/profiler.dir/profiling/profiler.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/derekjrussell/Documents/repos/MLForge/profiling/profiler.cpp > CMakeFiles/profiler.dir/profiling/profiler.cpp.i
 
 CMakeFiles/profiler.dir/profiling/profiler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/profiler.dir/profiling/profiler.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/profiling/profiler.cpp -o CMakeFiles/profiler.dir/profiling/profiler.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/derekjrussell/Documents/repos/MLForge/profiling/profiler.cpp -o CMakeFiles/profiler.dir/profiling/profiler.cpp.s
 
 # Object files for target profiler
 profiler_OBJECTS = \
