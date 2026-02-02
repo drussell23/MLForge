@@ -56,7 +56,7 @@ set_target_properties(MLForgeLib PROPERTIES
 # Import target "MLForgeLib" for configuration "Release"
 set_property(TARGET MLForgeLib APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(MLForgeLib PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/var/folders/zk/dhtp9f5173zf86p4p69jhs2m0000gn/T/tmpc01l2of_.build-lib/reactor_core/libMLForgeLib.dylib"
+  IMPORTED_LOCATION_RELEASE "/Users/djrussell23/Documents/repos/reactor-core/mlforge/libMLForgeLib.dylib"
   IMPORTED_SONAME_RELEASE "@rpath/libMLForgeLib.dylib"
   )
 
