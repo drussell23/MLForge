@@ -92,7 +92,8 @@ namespace ml
 
             bool Trie::removeHelper(TrieNode *node, const string &word, int depth)
             {
-                if (depth == word.size())
+                // v190.0: Cast to size_t to fix sign comparison warning
+                if (static_cast<size_t>(depth) == word.size())
                 {
                     // Word is found. Mark the end as false.
                     if (!node->isEndOfWord)

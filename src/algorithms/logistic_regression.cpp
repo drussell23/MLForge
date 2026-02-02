@@ -8,111 +8,12 @@
 #include <random>
 #include <iostream>
 
-// ---------------------------------------------------------------------
-// Define the matrix type for logistic regression.
-// By default, we use Matrix2D. To switch to Matrix3D, define this macro externally.
-#ifndef LINEAR_REGRESSION_MATRIX_TYPE
-    #define LINEAR_REGRESSION_MATRIX_TYPE ml::core::Matrix2D
-#endif
-
-// Alias for ease-of-use.
-#define LR_MATRIX_TYPE LINEAR_REGRESSION_MATRIX_TYPE
+// v190.0: LR_MATRIX_TYPE is already defined in the header file
+// Removed duplicate macro definitions that were causing redefinition errors
+// v190.0: Removed unused helper functions (transpose, multiply, invertMatrix)
+//         that were causing -Werror,-Wunused-function errors
 
 namespace {
-
-// ---------------------------------------------------------------------
-// Helper Functions for Matrix Operations
-// ---------------------------------------------------------------------
-
-// Transpose a matrix.
-LR_MATRIX_TYPE transpose(const LR_MATRIX_TYPE& A) {
-    std::size_t rows = A.rows();
-    std::size_t cols = A.cols();
-    LR_MATRIX_TYPE result(cols, rows, 0.0);
-    for (std::size_t i = 0; i < rows; ++i)
-        for (std::size_t j = 0; j < cols; ++j)
-            result(j, i) = A(i, j);
-    return result;
-}
-
-// Multiply two matrices.
-LR_MATRIX_TYPE multiply(const LR_MATRIX_TYPE& A, const LR_MATRIX_TYPE& B) {
-    if (A.cols() != B.rows()) {
-        throw std::invalid_argument("Incompatible dimensions for matrix multiplication.");
-    }
-    std::size_t m = A.rows();
-    std::size_t n = A.cols();
-    std::size_t p = B.cols();
-    LR_MATRIX_TYPE C(m, p, 0.0);
-    for (std::size_t i = 0; i < m; ++i) {
-        for (std::size_t j = 0; j < p; ++j) {
-            double sum = 0.0;
-            for (std::size_t k = 0; k < n; ++k) {
-                sum += A(i, k) * B(k, j);
-            }
-            C(i, j) = sum;
-        }
-    }
-    return C;
-}
-
-// Multiply matrix A by vector v.
-std::vector<double> multiply(const LR_MATRIX_TYPE& A, const std::vector<double>& v) {
-    if (A.cols() != v.size()) {
-        throw std::invalid_argument("Incompatible dimensions for matrix-vector multiplication.");
-    }
-    std::size_t m = A.rows();
-    std::size_t n = A.cols();
-    std::vector<double> result(m, 0.0);
-    for (std::size_t i = 0; i < m; ++i) {
-        double sum = 0.0;
-        for (std::size_t j = 0; j < n; ++j) {
-            sum += A(i, j) * v[j];
-        }
-        result[i] = sum;
-    }
-    return result;
-}
-
-// Invert a square matrix using Gauss-Jordan elimination.
-LR_MATRIX_TYPE invertMatrix(const LR_MATRIX_TYPE& A) {
-    std::size_t n = A.rows();
-    if (A.cols() != n) {
-        throw std::invalid_argument("Only square matrices can be inverted.");
-    }
-    LR_MATRIX_TYPE aug(n, 2*n, 0.0);
-    // Create augmented matrix [A | I]
-    for (std::size_t i = 0; i < n; ++i) {
-        for (std::size_t j = 0; j < n; ++j) {
-            aug(i, j) = A(i, j);
-        }
-        for (std::size_t j = n; j < 2*n; ++j) {
-            aug(i, j) = (j - n == i) ? 1.0 : 0.0;
-        }
-    }
-    // Gauss-Jordan elimination.
-    for (std::size_t i = 0; i < n; ++i) {
-        double pivot = aug(i, i);
-        if (std::abs(pivot) < std::numeric_limits<double>::epsilon()) {
-            throw std::runtime_error("Matrix is singular and cannot be inverted.");
-        }
-        for (std::size_t j = 0; j < 2*n; ++j) {
-            aug(i, j) /= pivot;
-        }
-        for (std::size_t k = 0; k < n; ++k) {
-            if (k == i) continue;
-            double factor = aug(k, i);
-            for (std::size_t j = 0; j < 2*n; ++j) {
-                aug(k, j) -= factor * aug(i, j);
-            }
-        }
-    }
-    LR_MATRIX_TYPE inv(n, n, 0.0);
-    for (std::size_t i = 0; i < n; ++i)
-        for (std::size_t j = 0; j < n; ++j)
-            inv(i, j) = aug(i, j+n);
-    return inv;
-}
 
 // ---------------------------------------------------------------------
 // Compute the Cross-Entropy Cost Function with L2 Regularization

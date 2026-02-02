@@ -48,13 +48,8 @@ namespace ml {
 namespace algorithms {
 
 // ------------------------------------------------------------
-// Node Constructor
-// ------------------------------------------------------------
-DecisionTree::Node::Node() 
-    : is_leaf(false), feature_index(-1), threshold(0.0), prediction(-1), left(nullptr), right(nullptr) {}
-
-// ------------------------------------------------------------
 // DecisionTree Constructor & Destructor
+// v190.0: Node() constructor is defined inline in header file
 // ------------------------------------------------------------
 DecisionTree::DecisionTree(int max_depth, int min_samples_split)
     : root_(nullptr), max_depth_(max_depth), min_samples_split_(min_samples_split) {}

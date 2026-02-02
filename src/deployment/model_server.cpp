@@ -96,7 +96,8 @@ namespace ml
             }
 
             // Updates the model with new training data without downtime.
-            virtual bool updateModel(const ml::core::Matrix2D &X, const std::vector<double> &y) override
+            // v190.0: [[maybe_unused]] to suppress -Werror,-Wunused-parameter
+            virtual bool updateModel(const ml::core::Matrix2D &X, [[maybe_unused]] const std::vector<double> &y) override
             {
                 std::lock_guard<std::mutex> lock(modelMutex_);
                 // In a real implementation, perform incremental training or load new weights.
@@ -151,7 +152,8 @@ namespace ml
                 server_ = std::make_unique<httplib::Server>();
 
                 // Define a POST endpoint for predictions.
-                server_->Post("/predict", [this](const httplib::Request &req, httplib::Response &res)
+                // v190.0: [[maybe_unused]] for req to suppress -Werror,-Wunused-parameter
+                server_->Post("/predict", [this]([[maybe_unused]] const httplib::Request &req, httplib::Response &res)
                               {
             // For demonstration, create a dummy input matrix.
             // In a real implementation, parse req.body to extract input features.
@@ -185,7 +187,8 @@ namespace ml
         };
 
         // Factory function to create a ModelServer instance for a given model type.
-        std::unique_ptr<ModelServer> createModelServer(ModelType type)
+        // v190.0: [[maybe_unused]] to suppress -Werror,-Wunused-parameter
+        std::unique_ptr<ModelServer> createModelServer([[maybe_unused]] ModelType type)
         {
             // For demonstration, return an instance of AdvancedModelServer regardless of type.
             return std::make_unique<AdvancedModelServer>();

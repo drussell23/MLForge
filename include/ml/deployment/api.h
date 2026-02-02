@@ -81,7 +81,8 @@ namespace ml
             /// @brief Dynamically updates hyperparameters.
             /// @param params A map of hyperparameter names to their new values.
             /// @return True if the update was successful.
-            virtual bool setHyperparameters(const unordered_map<string, double> &params)
+            // v190.0: [[maybe_unused]] to suppress -Werror,-Wunused-parameter
+            virtual bool setHyperparameters([[maybe_unused]] const unordered_map<string, double> &params)
             {
                 return false;
             }

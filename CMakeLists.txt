@@ -24,8 +24,9 @@ else()
     add_compile_options(-Wall -Wextra -pedantic -Werror)
 endif()
 
-# Define project directories.
-set(PROJECT_ROOT ${CMAKE_SOURCE_DIR})
+# v190.0: Fix - Use CMAKE_CURRENT_SOURCE_DIR for subdirectory builds
+# CMAKE_SOURCE_DIR points to parent when used as add_subdirectory()
+set(PROJECT_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
 set(INCLUDE_DIR ${PROJECT_ROOT}/include)
 set(SRC_DIR ${PROJECT_ROOT}/src)
 set(TEST_DIR ${PROJECT_ROOT}/tests)
@@ -48,7 +49,7 @@ file(GLOB_RECURSE MLFORGE_SOURCES "${SRC_DIR}/*.cpp")
 # Create the main MLForge library target.
 add_library(MLForgeLib ${MLFORGE_SOURCES})
 target_include_directories(MLForgeLib PUBLIC
-    $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
 )
 

@@ -94,7 +94,8 @@ namespace ml
             }
 
             // Updates the model with new training data.
-            virtual bool updateModel(const ml::core::Matrix2D &X, const std::vector<double> &y) override
+            // v190.0: [[maybe_unused]] to suppress -Werror,-Wunused-parameter
+            virtual bool updateModel(const ml::core::Matrix2D &X, [[maybe_unused]] const std::vector<double> &y) override
             {
                 std::cout << "[SimpleAPI] updateModel called with " << X.rows() << " samples." << std::endl;
                 // In a full implementation, you could retrain or fine-tune the model here.
@@ -136,7 +137,8 @@ namespace ml
         };
 
         // Factory function to create an API instance for a given model type.
-        std::unique_ptr<API> createAPI(ModelType type)
+        // v190.0: [[maybe_unused]] to suppress -Werror,-Wunused-parameter
+        std::unique_ptr<API> createAPI([[maybe_unused]] ModelType type)
         {
             // For demonstration purposes, we always return a SimpleAPI instance.
             return std::make_unique<SimpleAPI>();

@@ -122,7 +122,8 @@ void NeuralNet::train(const NN_MATRIX_TYPE& X, const std::vector<double>& y, int
     }
     // Simple stochastic gradient descent (one sample per update).
     for (int epoch = 0; epoch < epochs; ++epoch) {
-        double total_error = 0.0;
+        // v190.0: total_error kept for optional debugging (see line ~218)
+        [[maybe_unused]] double total_error = 0.0;
         // Loop over all training samples.
         for (std::size_t i = 0; i < n_samples; ++i) {
             // Extract the i-th sample as a vector.
@@ -156,7 +157,7 @@ void NeuralNet::train(const NN_MATRIX_TYPE& X, const std::vector<double>& y, int
             // Propagate backward:
             for (int l = weights_.size() - 2; l >= 0; --l) {
                 // delta_l = ( (W_{l+1}^T * delta_{l+1}) (excluding bias) ) .* activationDerivative(a_l without bias)
-                const NN_MATRIX_TYPE& W_next = weights_[l+1];
+                // v190.0: Removed unused W_next variable - weights_[l+1] used directly below
                 const std::vector<double>& a = activations[l+1]; // This activation has bias at index 0.
                 std::vector<double> delta_next = deltas[l+1];
                 // Compute weighted error for layer l.
